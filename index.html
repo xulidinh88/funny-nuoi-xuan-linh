@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="https://picsum.photos/32/32" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Dự Án Nuôi Tôi - Xuân Linh | Sao Kê Minh Bạch (Châm Biếm)</title>
+    <meta name="title" content="Dự Án Nuôi Xuân Linh | Sao Kê Minh Bạch (Châm Biếm)" />
+    <meta name="description" content="Trang web hài hước châm biếm về sự minh bạch tài chính. Xem sao kê chi tiết các khoản trà sữa, đi Đà Lạt chữa lành của Xuân Linh. Ủng hộ ngay để nhận được sự biết ơn vô hạn (từ xa)." />
+    <meta name="keywords" content="nuôi tôi, xuân linh, sao kê, châm biếm, từ thiện ảo, hài hước, meme, donate, techcombank" />
+    <meta name="author" content="Xuân Linh" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / Zalo -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Dự Án Nuôi Xuân Linh | Sao Kê Minh Bạch" />
+    <meta property="og:description" content="Một dự án phi lợi nhuận (cho bạn) và siêu lợi nhuận (cho tôi). Xem sao kê real-time bằng cơm ngay!" />
+    <meta property="og:image" content="https://img.vietqr.io/image/TCB-19070313726011-compact2.png" />
+    <meta property="og:image:alt" content="QR Code Donate Xuân Linh" />
+    <meta property="og:site_name" content="Dự Án Nuôi Tôi" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Dự Án Nuôi Xuân Linh" />
+    <meta property="twitter:description" content="Chung tay giúp Xuân Linh đạt được ước mơ tự do tài chính mà không cần làm gì cả." />
+    <meta property="twitter:image" content="https://img.vietqr.io/image/TCB-19070313726011-compact2.png" />
+
+    <!-- Structured Data (JSON-LD) for Google Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Dự Án Nuôi Tôi - Xuân Linh",
+        "url": "https://nuoitoi.com/",
+        "description": "Website châm biếm hài hước về minh bạch tài chính.",
+        "author": {
+          "@type": "Person",
+          "name": "Xuân Linh",
+          "jobTitle": "Chủ tịch hội đồng tiêu tiền",
+          "url": "https://nuoitoi.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tập đoàn Nuôi Tôi",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://picsum.photos/32/32"
+          }
+        },
+        "inLanguage": "vi"
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0ea5e9', // Sky 500
+              secondary: '#6366f1', // Indigo 500
+              accent: '#f43f5e', // Rose 500
+              dark: '#0f172a',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; 
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slide-up {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.3s ease-out forwards;
+      }
+      .animate-slide-up {
+        animation: slide-up 0.4s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-rose-200 selection:text-rose-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
